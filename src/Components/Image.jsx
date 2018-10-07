@@ -6,7 +6,7 @@ const Image = props => {
   return (
     <div className="card">
       <div className="img-container">
-        <img id={props.id} name={props.alt} alt={props.alt} src={props.image} isclicked={props.isclicked} onClick={props.onClick} />
+        <img id={props.id} name={props.alt} alt={props.alt} src={props.image} onClick={props.onClick} />
       </div>
     </div>
   );

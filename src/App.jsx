@@ -9,29 +9,34 @@ import Jumbotron from "./Components/Jumbotron";
 
 class App extends Component {
 
-    state = {
+  state = {
       goats: goats,
-      isclicked: {1: "false",
-                  2: "false"},
+      message: "Click an image to begin!",
       score: 0, 
       topscore: 0
-    }
-
-  handleClick = event => {
-    console.log(event.target);
-    const {id} = event.target;
-    console.log("id", id);
-    this.setState({
-      [isclicked[id]]: "true"})
-    // let element = document.getElementById(id);
-    // console.log("element", element);
-    // element.setAttribute("isclicked", "true");
-    this.countScore(); 
-    // this.forceUpdate();
   }
 
-  countScore = () => {
-     this.setState({score: this.state.count + 1});
+  clickedElements = [];
+  handleClick = event => {
+    const {id} = event.target;
+    if (this.clickedElements.includes(id)) {
+      this.setState({message: "Oh no, you had that one before!"})
+      this.resetGame();
+    } else {
+      this.clickedElements.push(id);
+      this.setState({score: this.state.score + 1});
+      if (this.state.topscore <= this.state.score) {
+        this.setState({topscore: this.state.topscore + 1});
+      }
+      this.shuffleGoats();
+    }
+  }
+
+  resetGame = () => {
+    this.setState({message: "Click an image to begin!"})
+    this.setState({score: 0});
+    this.shuffleGoats();
+    this.clickedElements = [];
   }
 
   shuffleGoats = () => {
@@ -55,6 +60,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header 
+        message={this.state.message}
         score={this.state.score}
         topscore={this.state.topscore}
         />
@@ -66,7 +72,6 @@ class App extends Component {
               name={goat.alt}
               image={goat.image}
               alt={goat.alt}
-              isclicked={this.state.isclicked[goat.id]}
               onClick={this.handleClick}
               key={goat.id}
             />
