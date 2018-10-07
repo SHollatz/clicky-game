@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat1.jpg?raw=true",
+    "alt": "goat1"
+  },
+  {
+    "id": 2,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat2.jpg?raw=true",
+    "alt": "goat2"
+  },
+  {
+    "id": 3,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat3.jpg?raw=true",
+    "alt": "goat3"
+  },
+  {
+    "id": 5,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat5.jpg?raw=true",
+    "alt": "goat5"
+  },
+  {
+    "id": 6,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat6.jpg?raw=true",
+    "alt": "goat6"
+  },
+  {
+    "id": 7,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat7.jpg?raw=true",
+    "alt": "goat7"
+  },
+  {
+    "id": 8,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat8.jpg?raw=true",
+    "alt": "goat8"
+  },
+  {
+    "id": 9,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat9.jpg?raw=true",
+    "alt": "goat9"
+  },
+  {
+    "id": 11,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat11.jpg?raw=true",
+    "alt": "goat11"
+  },
+  {
+    "id": 12,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat12.jpg?raw=true",
+    "alt": "goat12"
+  },
+  {
+    "id": 14,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat14.jpg?raw=true",
+    "alt": "goat14"
+  },
+  {
+    "id": 15,
+    "image": "https://github.com/SHollatz/clicky-game/blob/master/images/goat15.jpg?raw=true",
+    "alt": "goat15"
+  }
+]
