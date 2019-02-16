@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = (props) => (
-  <div>
+  <div className="Header">
     <nav className="navbar">
         <span className="navbar-item">Clicky Game</span>
         <span className="navbar-item">{props.message}</span>

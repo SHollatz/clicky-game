@@ -1,38 +1,48 @@
 .App {
   text-align: center;
+  position: relative;
+  margin-bottom: 0;
 }
 
-.navbar {
-  justify-content: flex-end;
+.Header {
+  width: 100%;
   background-color: #2A77AE;
-  height: 40px;
-  padding-top: 10px;
   color: yellow;
 }
 
+.navbar {
+  height: 40px;
+  max-width: 1130px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .navbar-item {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .wrapper {
   padding-top: 50px;
   background: #ECEFF1;
   max-width: 1130px;
-  height: 100%;
+  height: 600px;
   display: flex;
   flex-flow: row wrap;
   padding: 20px;
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .jumbotron {
   padding-top: 10px;
   width: 100%;
   text-align: center;
-  height: 300px;
+  height: 100px;
   font-size: 3rem;
   color: #2A77AE;
   background-color: rgb(221, 209, 102);
@@ -59,18 +69,16 @@
 }
 
 .footer {
-  min-height: 50px;
-  background-color: #2A77AE;
-  position: relative;
+  min-height: 40px;
 }
 
-.footer span {
-  position: absolute;
+.footer,
+.footertext {
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 3px;
   background-color: #2A77AE;
-  margin-bottom: 10px;
   color: yellow;
 }

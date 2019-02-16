@@ -20,20 +20,21 @@ class App extends Component {
   handleClick = event => {
     const {id} = event.target;
     if (this.clickedElements.includes(id)) {
-      this.setState({message: "Oh no, you had that one before!"})
+      console.log("inside if double clicked");
       this.resetGame();
     } else {
       this.clickedElements.push(id);
       this.setState({score: this.state.score + 1});
       if (this.state.topscore <= this.state.score) {
         this.setState({topscore: this.state.topscore + 1});
+        this.setState({message: "You cracked the Topscore!"})
       }
       this.shuffleGoats();
     }
   }
 
   resetGame = () => {
-    this.setState({message: "Click an image to begin!"})
+    this.setState({message: "Oh no, you had that one before! Try again"});
     this.setState({score: 0});
     this.shuffleGoats();
     this.clickedElements = [];
@@ -59,7 +60,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header 
+        <Header className="Header"
         message={this.state.message}
         score={this.state.score}
         topscore={this.state.topscore}

@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => (
   <footer className="footer">
-    <span>Clicky Game!</span>
+    <span className="footer-text">Clicky Game!</span>
   </footer>
 );
 
