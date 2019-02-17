@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/clicky-game/precache-manifest.29339bd8fad54428e7529e56418668be.js"
+  "/clicky-game/precache-manifest.c14bb52c8ebbb16d4901d5dd54c14afa.js"
 );
 
 workbox.clientsClaim();
